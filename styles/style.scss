@@ -1,0 +1,68 @@
+$white: hsl(0, 0%, 100%);
+$lightGray: hsl(212, 45%, 89%);
+$lightBlue: hsl(220, 15%, 55%);
+$darkBlue: hsl(218, 44%, 22%);
+$fontSize: 15px;
+$fontWeight1: 400;
+$fontWeight2: 700;
+$fontFamily: 'Outfit', sans-serif;
+
+// Select all the elements
+*
+{
+    // Remove default padding and margin from elements with border-box enabled
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+    // Set up the font size and familt
+    font-family: $fontFamily;
+    font-size: $fontSize;
+}
+
+body 
+{
+    // Set up flex box for the body
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    // Set up the sizing, text format, and background 
+    background-color: $lightGray;
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+    .container
+    {
+        
+        // Set the card's style
+        background-color: $white;
+        border-radius: 20px;
+        padding: 25px;
+        width: 350px;
+        img
+        {
+
+            // Set the image's dimensions to match the card
+            border-radius: 20px;
+            height: 300px;
+            width: 300px;
+        }
+        .text-1
+        {
+
+            // Set the text styling
+            color: $darkBlue;
+            font-weight: $fontWeight2;
+            margin-top: 25px;
+        }
+        .text-2
+        {
+
+            // Set the text styling
+            color: $lightBlue;
+            font-weight: $fontWeight1;
+            margin-top: 25px;
+        }
+    }
+}
